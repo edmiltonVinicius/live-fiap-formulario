@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <title>Cadastro - FIAP</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="section-left">
+        </section>
+
+        <section class="section-right">
+            <article class="container">
+            
+                <header class="header">
+                    <h2>Crie sua Conta</h2>
+                </header>
+            
+                <section>
+                    <form id="form" class="form">
+                        <div class="form-control">
+                            <label for="username">Nome de usuário</label>
+                            <input type="text" id="username" placeholder="Digite seu nome de usuário..." />
+
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+            
+                            <span>Mensagem de erro</span>
+                        </div>
+            
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Digite seu email.." />
+            
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+            
+                            <span>Mensagem de erro</span>
+                        </div>
+            
+                        <div class="form-control">
+                            <label for="password">Senha</label>
+                            <input type="password" id="password" placeholder="Digite sua senha..." />
+            
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+            
+                            <span>Mensagem de erro</span>
+                        </div>
+            
+                        <div class="form-control">
+                            <label for="password-confirmation">Confirmação de senha</label>
+                            <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..." />
+            
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+            
+                            <span>Mensagem de erro</span>
+                        </div>
+            
+                        <button type="submit" id="button-submit">
+                            <span class="button-text">Enviar</span>
+                            
+                            <div class="spinner hidden"></div>
+                        </button>
+                    </form>
+                </section>
+            
+            </article>
+        </section>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

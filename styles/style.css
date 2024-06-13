@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+main .section-left {
+  width: 60%;
+  background-image: url('../images/fiap-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+main .section-right {
+  width: 40%;
+}
+
+.container {
+  background-color: #fafafa;
+  width: 90%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #121212;
+  padding: 30px 20px;
+}
+
+.header h2 {
+  color: #b8c5cb;
+  text-transform: uppercase;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 3px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  outline-color: #999494;
+}
+
+.form-control input:disabled {
+  cursor: not-allowed;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control span {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  visibility: hidden;
+  font-size: 13px;
+}
+
+.form button {
+  background-color: #ed195c;
+  border: 2px solid #ed195c;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  height: 64px;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form button:not(:disabled):hover {
+  background-color: #c51049;
+  border-color: #c51049;
+}
+
+.form button:disabled {
+  opacity: .8;
+  cursor: not-allowed;
+}
+
+.spinner {
+  border: 4px solid #b2adad;
+  border-top: 4px solid #6a6b6c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #be4134;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #be4134;
+  visibility: visible;
+}
+
+.form-control.error span {
+  visibility: visible;
+  color: #be4134;
+}
